@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kandidater</title>
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="../candidates/candidates.css">
+</head>
+<body>
+<nav id="nav-bar"></nav>
+<h3>Kandidater for kommunalvalget i november 2021 for Samsø kommune</h3>
+<label for="sort-by-party-select">Vælg parti</label><br><select id="sort-by-party-select">
+    <option value="all">Alle partier</option>
+</select>
+<div id="party-votes-div">
+</div>
+<br>
+<br>
+
+<table>
+    <button id="new-candidate-button">Opret ny kandidat</button>
+    <thead>
+    <tr>
+        <th>Navn</th>
+        <th>Parti</th>
+        <th>Stemmer</th>
+        <th>Handlinger</th>
+    </tr>
+    </thead>
+    <tbody id="candidates-tbody"></tbody>
+
+</table>
+
+<div class="modal">
+    <div class="modal-content">
+        <p>Ny Kandidat<span class="close">X</span></p>
+        <label for="new-candidate-name-input">Navn</label><br>
+        <input id="new-candidate-name-input" type="text"><br>
+        <label for="new-candidate-party-select">Parti</label><br>
+        <select id="new-candidate-party-select"></select><br><br>
+        <button id="new-candidate-submit">Opret kandidat</button>
+    </div>
+</div>
+
+
+</body>
+<script src="../global/global.js"></script>
+<script src="../candidates/candidates.js"></script>
+<script src="../candidates/candidatesCreate.js"></script>
+<script src="../candidates/partyVotes.js"></script>
+</html>

@@ -1,0 +1,14 @@
+.card-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card{
+    min-width: auto;
+    background-color: lightgrey;
+    border: solid black 1px;
+    padding: 1rem;
+}
+
+
